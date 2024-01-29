@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:sanitas/modules/login_screen.dart';
+import 'package:sanitas/modules/user_information.dart';
 import 'package:sanitas/shared/components/navigate_widget.dart';
 import '../shared/components/appbar_widget.dart';
 import '../shared/components/button_widget.dart';
@@ -9,6 +10,7 @@ import '../shared/components/or_seprated_widget.dart';
 import '../shared/components/text_box_form_widget.dart';
 import '../shared/components/text_widget.dart';
 import '../shared/styles/colors.dart';
+import 'home_meat.dart';
 
 class SignUpPage extends StatefulWidget{
   @override
@@ -126,6 +128,9 @@ class _SignUpPageState extends State<SignUpPage> {
                 colorButton: buttonColor,
                 widthContainer: MediaQuery.of(context).size.width,
                 heightContainer: 48.h,
+                onPressed: (){
+                  navigateTo(context, UserInformation());
+                },
               ),
               SizedBox(height: 20.h,),
               DefaultText(

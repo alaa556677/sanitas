@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sanitas/modules/Sign%20up%20Screen.dart';
+import 'package:sanitas/modules/user_information.dart';
 import 'package:sanitas/shared/components/navigate_widget.dart';
 import 'package:sanitas/shared/styles/colors.dart';
 import '../shared/components/appbar_widget.dart';
@@ -104,6 +105,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 colorButton: buttonColor,
                 widthContainer: MediaQuery.of(context).size.width,
                 heightContainer: 48.h,
+                onPressed: (){
+                  navigateTo(context, UserInformation());
+                },
               ),
               SizedBox(height: 20.h,),
               Row(
