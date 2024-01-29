@@ -18,3 +18,4 @@ const Color scrollColor = Color(0xff515153);
 const Color redColor = Color(0xffFF7058);
 const Color containerGrey = Color(0xffB3B3B3);
 const Color containerGreyLight = Color(0xffEFEFEF);
+const Color bottomNavigationColor = Color(0xffF1F1F1);

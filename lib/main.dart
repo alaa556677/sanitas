@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'layouts/home_layout.dart';
 import 'modules/Sign up Screen.dart';
 import 'modules/home_meat.dart';
 import 'modules/login_screen.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         return  MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
-          home:  PhotoResultScreen(),
+          home:  SplashScreen(),
         );
       },
     );

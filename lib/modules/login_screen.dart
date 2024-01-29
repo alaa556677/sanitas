@@ -5,6 +5,7 @@ import 'package:sanitas/modules/Sign%20up%20Screen.dart';
 import 'package:sanitas/modules/user_information.dart';
 import 'package:sanitas/shared/components/navigate_widget.dart';
 import 'package:sanitas/shared/styles/colors.dart';
+import '../layouts/home_layout.dart';
 import '../shared/components/appbar_widget.dart';
 import '../shared/components/button_widget.dart';
 import '../shared/components/or_seprated_widget.dart';
@@ -106,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 widthContainer: MediaQuery.of(context).size.width,
                 heightContainer: 48.h,
                 onPressed: (){
-                  navigateTo(context, UserInformation());
+                  navigateTo(context, HomeLayout());
                 },
               ),
               SizedBox(height: 20.h,),
