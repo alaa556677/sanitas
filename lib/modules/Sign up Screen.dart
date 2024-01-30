@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:sanitas/modules/login_screen.dart';
+import 'package:sanitas/modules/user_information.dart';
 import 'package:sanitas/shared/components/navigate_widget.dart';
 import '../layouts/home_layout.dart';
 import '../shared/components/appbar_widget.dart';
@@ -129,7 +130,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 widthContainer: MediaQuery.of(context).size.width,
                 heightContainer: 48.h,
                 onPressed: (){
-                  navigateTo(context, HomeLayout());
+                  navigateTo(context, UserInformation());
                 },
               ),
               SizedBox(height: 20.h,),

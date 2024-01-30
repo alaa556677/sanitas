@@ -107,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 widthContainer: MediaQuery.of(context).size.width,
                 heightContainer: 48.h,
                 onPressed: (){
-                  navigateTo(context, HomeLayout());
+                  navigateTo(context, UserInformation());
                 },
               ),
               SizedBox(height: 20.h,),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sanitas/modules/home_meat.dart';
 
+import '../layouts/home_layout.dart';
 import '../shared/components/appbar_widget.dart';
 import '../shared/components/button_widget.dart';
 import '../shared/components/dropdown_widget.dart';
@@ -162,7 +163,7 @@ class _UserInformationState extends State<UserInformation> {
                 widthContainer: MediaQuery.of(context).size.width,
                 heightContainer: 48.h,
                 onPressed: (){
-                  navigateTo(context, HomeMeatPage());
+                  navigateTo(context, HomeLayout());
                 },
               ),
               SizedBox(height: 15.h,),   
