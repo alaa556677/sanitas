@@ -49,6 +49,7 @@ List screens = [
   HomeMeatPage(),
   Container(),
   CacheHelper.getData(key: "meat") == null  || CacheHelper.getData(key: "meat") ? MeatSearchScreen() :  ProductsSearch(),
+  //ProductsSearch(),
   ProfileScreen(),
 ];
 

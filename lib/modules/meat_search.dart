@@ -5,6 +5,7 @@ import 'package:sanitas/modules/photo_analysis.dart';
 import 'package:sanitas/modules/photo_search.dart';
 import '../shared/components/appbar_widget.dart';
 import '../shared/components/button_widget.dart';
+import '../shared/components/methods_components.dart';
 import '../shared/components/navigate_widget.dart';
 import '../shared/components/text_widget.dart';
 import '../shared/styles/colors.dart';
@@ -38,17 +39,22 @@ class MeatSearchScreen extends StatelessWidget{
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Stack(
-                alignment: Alignment.center,
-                children: [
-                  SvgPicture.asset('assets/icons/purple.svg'),
-                  SvgPicture.asset('assets/icons/blue.svg'),
-                  Container(width: 166, height: 170, decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(36),
-                    color: Colors.white,
-                  ),),
-                  SvgPicture.asset('assets/icons/camera.svg'),
-                ],
+              GestureDetector(
+                onTap: (){
+                  uploadImage();
+                },
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    SvgPicture.asset('assets/icons/purple.svg'),
+                    SvgPicture.asset('assets/icons/blue.svg'),
+                    Container(width: 166, height: 170, decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(36),
+                      color: Colors.white,
+                    ),),
+                    SvgPicture.asset('assets/icons/camera.svg'),
+                  ],
+                ),
               ),
               SizedBox(height: 80.h,),
               DefaultText(
