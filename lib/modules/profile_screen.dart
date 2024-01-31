@@ -195,7 +195,7 @@ class ProfileScreen extends StatelessWidget{
                         widthContainer: MediaQuery.of(context).size.width,
                         heightContainer: 48.h,
                         onPressed: (){
-                          navigateTo(context, const ProductsSearch());
+                          //navigateTo(context, const ProductsSearch());
                         },
                       ),
                     ),

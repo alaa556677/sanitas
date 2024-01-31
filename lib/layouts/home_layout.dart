@@ -45,8 +45,8 @@ class _HomeLayoutState extends State<HomeLayout> {
 
 List screens = [
   HomeMeatPage(),
-  const ProductsSearch(),
-  PhotoResultScreen(),
+  Container(),
+  ProductsSearch(),
   ProfileScreen(),
 ];
 
