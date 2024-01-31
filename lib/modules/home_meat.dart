@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:measure_size/measure_size.dart';
 import 'package:sanitas/modules/profile_screen.dart';
 import 'package:sanitas/shared/components/navigate_widget.dart';
+import 'package:sanitas/shared/constants/shared.dart';
 import '../shared/components/appbar_widget.dart';
 import '../shared/components/builder_grid_view.dart';
 import '../shared/components/button_widget.dart';
@@ -168,6 +169,7 @@ class _HomeMeatPageState extends State<HomeMeatPage> {
                               isMeat = true;
                               isProducts = false;
                               isVegetable = false;
+                              CacheHelper.saveData(key: "meat", value: isMeat);
                             });
                           },
                         ),
@@ -184,6 +186,7 @@ class _HomeMeatPageState extends State<HomeMeatPage> {
                               isMeat = false;
                               isProducts = false;
                               isVegetable = true;
+                              CacheHelper.saveData(key: "meat", value: isMeat);
                             });
                           },
                         ),
@@ -200,6 +203,7 @@ class _HomeMeatPageState extends State<HomeMeatPage> {
                               isMeat = false;
                               isProducts = true;
                               isVegetable = false;
+                              CacheHelper.saveData(key: "meat", value: isMeat);
                             });
                           },
                         ),

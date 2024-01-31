@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import '../modules/home_meat.dart';
+import '../modules/meat_search.dart';
 import '../modules/photo_result_screen.dart';
 import '../modules/photo_search.dart';
 import '../modules/products_search.dart';
 import '../modules/profile_screen.dart';
+import '../shared/constants/shared.dart';
 import '../shared/styles/colors.dart';
 
 class HomeLayout extends StatefulWidget{
@@ -13,9 +15,9 @@ class HomeLayout extends StatefulWidget{
 
 class _HomeLayoutState extends State<HomeLayout> {
   int currentNumber = 0;
-
   @override
   Widget build(BuildContext context) {
+    print("fffffff ${CacheHelper.getData(key: "meat")}");
     return Scaffold(
       //extendBodyBehindAppBar: true,
       //appBar: AppBar(),
@@ -46,7 +48,7 @@ class _HomeLayoutState extends State<HomeLayout> {
 List screens = [
   HomeMeatPage(),
   Container(),
-  ProductsSearch(),
+  CacheHelper.getData(key: "meat") == null  || CacheHelper.getData(key: "meat") ? MeatSearchScreen() :  ProductsSearch(),
   ProfileScreen(),
 ];
 

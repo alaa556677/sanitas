@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'layouts/home_layout.dart';
-import 'modules/Sign up Screen.dart';
-import 'modules/home_meat.dart';
-import 'modules/login_screen.dart';
-import 'modules/meat_search.dart';
-import 'modules/photo_result_screen.dart';
-import 'modules/photo_search.dart';
-import 'modules/products_search.dart';
-import 'modules/profile_screen.dart';
+import 'package:sanitas/shared/constants/shared.dart';
 import 'modules/splash_screen.dart';
-import 'modules/user_information.dart';
-import 'modules/welcome_page.dart';
+import 'dart:io';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await CacheHelper.init();
   runApp(const MyApp());
 }
 
